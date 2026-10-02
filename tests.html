@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campus Café — unit tests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .runner { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+  .score {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.6rem 0.9rem;
+    display: inline-block;
+  }
+  .score--good { background: var(--mint); color: var(--teal); }
+  .score--bad  { background: rgba(184, 50, 31, 0.12); color: var(--poppy); }
+  #test-results { list-style: none; margin: 1.5rem 0 0; padding: 0; }
+  #test-results li { padding: 0.5rem 0; border-bottom: 1px dotted var(--rule); font-size: 0.95rem; }
+  .mark { font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 0.78rem; }
+  .pass .mark { color: var(--teal); }
+  .fail { background: rgba(184, 50, 31, 0.08); }
+  .fail .mark { color: var(--poppy); }
+  .why { font-family: 'Courier Prime', monospace; font-size: 0.8rem; color: var(--poppy); padding-top: 0.25rem; }
+</style>
+</head>
+<body>
+
+<header class="counter">
+  <div class="counter-inner">
+    <h1>Unit tests</h1>
+    <p class="counter-note">Totals, the three discount strategies, the observer wiring and every branch of the placeOrder contract. <a href="index.html" style="color:#fff">Back to the café</a>.</p>
+  </div>
+</header>
+
+<main class="runner">
+  <p id="scoreboard" class="score">running…</p>
+  <ul id="test-results"></ul>
+</main>
+
+<script src="js/observable.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/discounts.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/order-service.js"></script>
+<script src="tests/tests.js"></script>
+</body>
+</html>

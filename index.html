@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campus Café — order at the counter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="counter">
+  <div class="counter-inner">
+    <h1>Campus Café</h1>
+    <p class="counter-note">Order from the board, pay at the till. Open 7:30 to 16:00.</p>
+  </div>
+</header>
+
+<main class="room">
+
+  <section class="board" aria-labelledby="board-heading">
+    <div class="board-head">
+      <h2 id="board-heading">Today's board</h2>
+      <p class="board-hint">Tap an item to put it on the ticket. <em>Sell out</em> is there so you can see what happens when the kitchen runs out mid-order.</p>
+    </div>
+    <ul class="menu" id="menu-board"></ul>
+  </section>
+
+  <section class="ticket" aria-labelledby="ticket-heading">
+    <div class="ticket-head">
+      <h2 id="ticket-heading">Your ticket</h2>
+      <span class="count" id="item-count">0 items</span>
+    </div>
+
+    <ul class="ticket-list" id="ticket-lines"></ul>
+
+    <fieldset class="discounts">
+      <legend>Discount</legend>
+      <div id="discount-choices"></div>
+    </fieldset>
+
+    <div class="totals" id="totals"></div>
+
+    <p class="summary" id="summary"></p>
+
+    <div class="actions">
+      <button type="button" id="place-order" class="primary">Place order</button>
+      <button type="button" id="clear-cart" class="quiet">Clear ticket</button>
+    </div>
+
+    <div class="message" id="message" role="status" aria-live="polite"></div>
+
+    <details class="observer-proof">
+      <summary>What the cart just told its observers</summary>
+      <ul id="event-log"></ul>
+      <p>Four views subscribe to the cart: the line list, the total, the summary sentence and this log. The cart calls none of them by name.</p>
+    </details>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <p>Built for the software engineering team project — Strategy, Observer, SOLID, a documented <code>placeOrder</code> contract and unit tests. <a href="tests.html">Run the tests</a>.</p>
+</footer>
+
+<script src="js/observable.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/discounts.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/order-service.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
