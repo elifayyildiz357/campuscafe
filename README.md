@@ -140,9 +140,7 @@ tests/tests.js      16 unit tests + a 40-line test runner
 
 | Member | Work |
 |---|---|
-| NAME 1 | *e.g.* menu + cart logic, `js/menu.js`, `js/cart.js` |
-| NAME 2 | *e.g.* discount strategies and the registry, `js/discounts.js` |
-| NAME 3 | *e.g.* `placeOrder` contract and error handling, `js/order-service.js` |
-| NAME 4 | *e.g.* page, styling and the unit tests, `index.html`, `styles.css`, `tests/tests.js` |
-
-Fill in the real names and make sure every member has commits in the history.
+| Dharuvı Jaın | menu + cart logic, `js/menu.js`, `js/cart.js` |
+| Tsogzolmaa Bayansan |  discount strategies and the registry, `js/discounts.js` |
+| Elif Ayyildiz |  `placeOrder` contract and error handling, `js/order-service.js` |
+| Gokhan Karaca |  page, styling and the unit tests, `index.html`, `styles.css`, `tests/tests.js` |
