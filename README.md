@@ -4,10 +4,7 @@ A one-page ordering app for the campus café. Browse the board, build a ticket, 
 discount, place the order. Everything runs in the browser: plain HTML, CSS and
 JavaScript, no framework, no build step, no install.
 
-**Live page:** https://YOUR-USERNAME.github.io/YOUR-REPO/
-**Tests:** https://YOUR-USERNAME.github.io/YOUR-REPO/tests.html
-
-> Replace both links after you turn on GitHub Pages.
+**Live page:** https://elifayyildiz357.github.io/campuscafe/
 
 ---
 
@@ -51,13 +48,6 @@ free, once per order. Food is never part of this rule.
 Nothing in `cart.js` knows that `ui.js` exists. Open the *What the cart just told its
 observers* panel on the page to watch the notifications arrive.
 
-Direct links to those lines on GitHub (fill in after the final commit — open the file,
-click the line number, copy the address bar):
-
-- Strategy, the interface: `PASTE LINK`
-- Strategy, the four rules: `PASTE LINK`
-- Observer, the subject: `PASTE LINK`
-- Observer, the four views subscribing: `PASTE LINK`
 
 ### SOLID principles we can point at
 
